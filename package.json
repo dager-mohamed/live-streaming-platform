@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "dev:web": "npx nx run web:dev",
-    "dev:backend": "npx nx serve backend"
+    "dev:backend": "npx nx serve backend",
+    "dev:video": "npx nx run video:run"
   },
   "private": true,
   "dependencies": {
@@ -12,6 +13,7 @@
     "@clerk/nextjs": "^5.2.8",
     "@clerk/themes": "^2.1.14",
     "@nestjs/common": "^10.0.2",
+    "@nestjs/config": "^3.2.3",
     "@nestjs/core": "^10.0.2",
     "@nestjs/platform-express": "^10.0.2",
     "@radix-ui/react-avatar": "^1.1.0",
@@ -32,6 +34,7 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
+    "@monodon/rust": "^1.4.0",
     "@nestjs/schematics": "^10.0.1",
     "@nestjs/testing": "^10.0.2",
     "@nx/eslint": "19.5.3",

@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@org/shared": ["shared/src/index.ts"],
-      "@org/shared/*": ["shared/src/*"],
+      "@org/shared/*": ["shared/src/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

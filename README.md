@@ -4,9 +4,14 @@
 - Install packages <br/>
   ```npm install```
 
-## Running the project
+## Setup
 
-- Running the backend app in development mode <br/>
+- Run the backend app in development mode <br/>
   ```npm run dev:backend```
-- Running the frontend app in development mode <br/>
+- Run the frontend app in development mode <br/>
   ```npm run dev:web```
+- Run the video transcoder service <br/>
+  ```npm run dev:video```
+- Run the RTMP server with nginx: <br/>
+  1. ```docker-compose build``` <br/>
+  2. ```docker-compose up```

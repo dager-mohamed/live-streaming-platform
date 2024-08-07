@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  rtmp:
+    build: './apps/video'
+    ports:
+      - "1935:1935"
+    container_name: rtmp_server
