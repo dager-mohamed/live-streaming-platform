@@ -44,8 +44,7 @@
         "serveTargetName": "serve",
         "previewTargetName": "preview"
       }
-    },
-    "@monodon/rust"
+    }
   ],
   "generators": {
     "@nx/next": {

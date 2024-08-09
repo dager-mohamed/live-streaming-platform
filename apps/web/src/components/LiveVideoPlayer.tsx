@@ -13,13 +13,14 @@ export default function LiveVideoPlayer({ src, poster }: VideoPlayerProps) {
   return (
     <div className="w-full h-full" style={{ maxWidth: '80%' }}>
       <MediaPlayer
-        src="https://stream.mux.com/v69RSHhFelSm4701snP22dYz2jICy4E4FUyk02rW4gxRM.m3u8"
-        poster="https://image.mux.com/v69RSHhFelSm4701snP22dYz2jICy4E4FUyk02rW4gxRM/thumbnail.webp?time=30"
+        src={src}
+        poster={poster}
         viewType="video"
         streamType="live"
         className="h-full"
         logLevel="warn"
         crossOrigin
+        liveEdgeTolerance={6}
         playsInline
       >
         <MediaProvider>

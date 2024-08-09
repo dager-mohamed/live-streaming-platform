@@ -34,7 +34,6 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@monodon/rust": "^1.4.0",
     "@nestjs/schematics": "^10.0.1",
     "@nestjs/testing": "^10.0.2",
     "@nx/eslint": "19.5.3",
