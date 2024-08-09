@@ -4,7 +4,7 @@ import { SendIcon } from 'lucide-react';
 
 export default function Chat() {
     return(
-        <div className="bg-background border-l flex flex-col w-[400px]">
+        <div className="bg-background h-full border-l flex flex-col w-[400px]">
         <div className="border-b px-4 py-3 text-lg font-medium">Live Chat</div>
         <div className="flex-1 overflow-auto p-4 space-y-4">
           <div className="flex items-start gap-3">
