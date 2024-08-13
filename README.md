@@ -1,5 +1,3 @@
-# Live streaming platform
-
 ## Installation
 
 - Install packages <br/>
@@ -18,3 +16,6 @@
 - Run ```npm run dev```
 - Run the RTMP Server, HLS transcoder and the S3 directory sync [important]: <br/>
   - ```npm run docker```
+
+## Video service
+![Video streaming service](https://github.com/user-attachments/assets/334989a1-246f-4675-a010-3399d88187c3)
