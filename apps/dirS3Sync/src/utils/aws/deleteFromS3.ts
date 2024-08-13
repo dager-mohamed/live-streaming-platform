@@ -10,5 +10,5 @@ export function deleteFromS3(filePath: string) {
         Key: path.basename(filePath),
       })
     )
-    .catch((err) => console.log(err));
+    .catch((err) => console.error(err));
 }

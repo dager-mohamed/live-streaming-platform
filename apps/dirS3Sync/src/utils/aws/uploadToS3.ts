@@ -11,19 +11,11 @@ export function uploadToS3(filePath: string) {
 
   awsS3Client
     .send(
-      new CreateBucketCommand({
-        Bucket: process.env.AWS_S3_BUCKET,
-      })
-    )
-    .catch((err) => console.log(err));
-
-  awsS3Client
-    .send(
       new PutObjectCommand({
         Bucket: process.env.AWS_S3_BUCKET,
         Key: path.basename(filePath),
         Body: fileContent,
       })
     )
-    .catch((err) => console.log(err));
+    .catch((err) => console.error(err));
 }

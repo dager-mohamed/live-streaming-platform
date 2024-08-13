@@ -5,7 +5,9 @@
   "scripts": {
     "dev:web": "npx nx run web:dev",
     "dev:backend": "npx nx serve backend",
-    "dev:watcher": "npx nx run dirS3Sync:serve"
+    "dev:watcher": "npx nx run dirS3Sync:serve",
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:backend\" \"npm run dev:watcher\"",
+    "docker": "docker-compose up --build"
   },
   "private": true,
   "dependencies": {
@@ -63,6 +65,7 @@
     "@typescript-eslint/parser": "^7.16.0",
     "autoprefixer": "10.4.13",
     "babel-jest": "^29.4.1",
+    "concurrently": "^8.2.2",
     "esbuild": "^0.19.2",
     "eslint": "~8.57.0",
     "eslint-config-next": "14.2.3",
