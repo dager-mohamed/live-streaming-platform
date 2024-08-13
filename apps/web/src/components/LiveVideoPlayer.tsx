@@ -99,7 +99,7 @@ export default function LiveVideoPlayer({ src }: VideoPlayerProps) {
     <div ref={containerRef} className="relative w-full h-full">
       <video
         ref={videoRef}
-        className="w-full h-full object-cover"
+        className="w-full h-full"
         controls={false}
         controlsList="nodownload"
         playsInline

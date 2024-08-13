@@ -1,7 +1,7 @@
 version: '3.9'
 services:
   rtmp:
-    build: './apps/video'
+    build: './video'
     ports:
       - "1935:1935"
       - "8080:8080"

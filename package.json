@@ -5,10 +5,11 @@
   "scripts": {
     "dev:web": "npx nx run web:dev",
     "dev:backend": "npx nx serve backend",
-    "dev:video": "npx nx run video:run"
+    "dev:watcher": "npx nx run dirS3Sync:serve"
   },
   "private": true,
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.629.0",
     "@clerk/clerk-sdk-node": "^5.0.20",
     "@clerk/nextjs": "^5.2.8",
     "@clerk/themes": "^2.1.14",
@@ -19,6 +20,7 @@
     "@radix-ui/react-avatar": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "axios": "^1.6.0",
+    "chokidar": "^3.6.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cookie-parser": "^1.4.6",
@@ -36,6 +38,7 @@
   "devDependencies": {
     "@nestjs/schematics": "^10.0.1",
     "@nestjs/testing": "^10.0.2",
+    "@nx/esbuild": "19.5.3",
     "@nx/eslint": "19.5.3",
     "@nx/eslint-plugin": "19.5.3",
     "@nx/jest": "19.5.3",
@@ -60,6 +63,7 @@
     "@typescript-eslint/parser": "^7.16.0",
     "autoprefixer": "10.4.13",
     "babel-jest": "^29.4.1",
+    "esbuild": "^0.19.2",
     "eslint": "~8.57.0",
     "eslint-config-next": "14.2.3",
     "eslint-config-prettier": "^9.0.0",

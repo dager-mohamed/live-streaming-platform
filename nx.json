@@ -29,7 +29,11 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/backend-e2e/**/*"]
+      "exclude": [
+        "apps/backend-e2e/**/*",
+        "apps/dir-s3-sync-e2e/**/*",
+        "apps-e2e/**/*"
+      ]
     },
     {
       "plugin": "@nx/eslint/plugin",
@@ -55,6 +59,13 @@
     },
     "@nx/react": {
       "library": {}
+    }
+  },
+  "targetDefaults": {
+    "@nx/esbuild:esbuild": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
   }
 }
